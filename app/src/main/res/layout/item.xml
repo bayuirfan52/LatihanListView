@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_padding">
+
+    <ImageView
+        android:id="@+id/image_list"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:ignore="ContentDescription"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/name_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_list"
+        android:layout_toEndOf="@+id/image_list"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginStart="@dimen/content_margin"
+        android:text="@string/name_heroes"
+        android:textSize="@dimen/name_list_size"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/desc_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_list"
+        android:layout_toRightOf="@+id/image_list"
+        android:layout_toEndOf="@+id/image_list"
+        android:layout_marginStart="@dimen/content_margin"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginTop="@dimen/content_margin_top"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/lorem_ipsum"
+        />
+</RelativeLayout>
